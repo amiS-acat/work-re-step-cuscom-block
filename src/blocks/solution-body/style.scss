@@ -1,0 +1,19 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-solution-body {
+	background-color: var(--primary-color-light);
+	padding: 9rem 0 6rem;
+	overflow: hidden;
+
+	.wp-block-video {
+		max-width: var(--max-width-inner-container);
+		width: 100%;
+		margin: auto;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-solution-body {
+		padding: 6rem 0 1.25rem;
+	}
+}

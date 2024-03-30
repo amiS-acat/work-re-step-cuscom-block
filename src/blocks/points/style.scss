@@ -1,0 +1,25 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-points {
+	display: flex;
+	justify-content: center;
+	background-image: url(../../images/custom-block-content-solution-body-bh-01.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 51.5rem;
+	padding: 8.5rem 0 0;
+
+	&__inner {
+		display: grid;
+		gap: 2.5rem;
+		max-width: var(--max-width-inner-container);
+		width: 100%;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-points {
+		background-position: center 5.75rem;
+		padding: 3rem 0 0;
+	}
+}

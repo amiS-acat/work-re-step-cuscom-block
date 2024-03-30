@@ -1,0 +1,30 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-problem {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -3.5rem;
+	overflow: hidden;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		max-width: var(--max-width-container);
+		width: 100%;
+		min-height: 66rem;
+		background-image: url(../../images/custom-block-content-problem-bg-01.webp);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 166rem;
+		padding: 3.5rem 1.75rem;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-content-problem {
+		&__inner {
+			min-height: 68rem;
+			background-size: 120rem;
+		}
+	}
+}

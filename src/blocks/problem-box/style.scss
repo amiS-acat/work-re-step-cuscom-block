@@ -1,0 +1,48 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-problem-box {
+	color: var(--color-light);
+	background-color: #5d5d5d;
+	position: relative;
+	line-height: 3.8;
+	font-size: 1.625rem;
+	font-weight: bold;
+	max-width: var(--max-width-inner-container);
+	width: 100%;
+	height: fit-content;
+	min-height: 15.5rem;
+	padding: 4.25rem 0.5rem 6.25rem;
+	text-align: center;
+	margin: 13.75rem auto 11.5rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -3rem;
+		left: -3rem;
+		background-image: url(../../images/custom-block-problem-box-item-01.svg);
+		background-size: cover;
+		width: 14rem;
+		height: 11rem;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -0.5rem;
+		right: -7rem;
+		background-image: url(../../images/custom-block-problem-box-item-02.svg);
+		background-size: cover;
+		width: 16rem;
+		height: 9rem;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-problem-box {
+		line-height: 2.45;
+		font-size: 1.075rem;
+		padding: 2.75rem 2rem 2rem;
+		margin: 2.25rem auto;
+	}
+}

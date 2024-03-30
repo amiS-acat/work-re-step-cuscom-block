@@ -1,0 +1,55 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-problem-top {
+	min-height: 38rem;
+
+	&__inner {
+		>.wp-block-custom-text {
+			color: var(--color-light);
+			display: block;
+			line-height: 1.5;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 4.75rem;
+		}
+	}
+
+	.wp-block-custom-heading {
+		text-align: center;
+
+		&__text {
+			color: var(--color-light);
+			display: table;
+			font-size: 3rem;
+			font-weight: bold;
+			width: 100%;
+
+			>.--small {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-problem-top {
+
+		&__inner {
+			>.wp-block-custom-text {
+				font-size: 1.75rem;
+				margin-top: 4.25rem;
+			}
+		}
+
+		.wp-block-custom-heading {
+			&__text {
+				font-size: 2rem;
+
+				>.--small {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}

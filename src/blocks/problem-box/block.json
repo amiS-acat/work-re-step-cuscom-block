@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "custom/problem-box",
+	"parent": [ "custom/content-problem" ],
+	"version": "0.1.0",
+	"title": "Problem Box",
+	"category": "widgets",
+	"icon": "smiley",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "problem-box",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

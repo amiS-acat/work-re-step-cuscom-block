@@ -1,0 +1,56 @@
+.wp-block {
+	font-size: 100%;
+}
+
+.wp-block-custom-text {
+	>* {
+		display: inline;
+	}
+}
+
+.block-editor-inner-blocks {
+	width: 100%;
+}
+
+.block-editor-custom-heading {
+	font-size: 2em;
+	text-align: left;
+	margin-top: 1em;
+
+	* {
+		display: inline;
+	}
+
+	.--small {
+		font-size: 0.75em;
+	}
+}
+
+.block-editor-custom-tag {
+	width: fit-content;
+	border: 0.1rem solid;
+}
+
+.block-editor-custom-input {
+	display: flex;
+	gap: 1rem;
+}
+
+.block-editor-custom-button {
+	display: inline-block;
+	border: 0.1rem solid;
+	padding: 0.75rem 1.5rem;
+	margin: 1rem 0;
+}
+
+.block-editor-custom-bubble {
+	border: 0.1rem solid;
+	border-radius: 1rem;
+	padding: 0.75rem 1.5rem;
+	margin: 1rem 0;
+}
+
+.block-editor-custom-box {
+	border: 0.1rem solid;
+	padding: 0.75rem 1.5rem;
+}

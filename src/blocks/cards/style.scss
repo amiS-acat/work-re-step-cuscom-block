@@ -1,0 +1,75 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-cards {
+	padding: 2rem 0 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.wp-block-custom-cards-items {
+	display: flex;
+	width: 100%;
+	padding: 0 5%;
+	overflow: auto;
+}
+
+.wp-block-custom-cards-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 37%;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	transform: translateX(50%);
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&::before {
+		content: "";
+		background-color: var(--color-light);
+		width: 1rem;
+		height: 1rem;
+		clip-path: polygon(35% 0, 90% 50%, 35% 100%, 20% 100%, 70% 50%, 20% 0);
+	}
+
+	&.--prev {
+		background-color: var(--primary-color-vivid);
+		left: 0;
+
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+
+	&.--next {
+		background-color: var(--primary-color-vivid);
+		right: calc(8%);
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-cards {
+		padding: 3rem 0 6.5rem;
+	}
+
+	.wp-block-custom-cards-items {
+		scrollbar-width: none;
+		padding: 0 22%;
+	}
+
+	.wp-block-custom-cards-button {
+		&.--prev {
+			left: calc(50% - 25%);
+			transform: translateX(-50%);
+		}
+
+		&.--next {
+			right: calc(50% - 25%);
+			transform: translateX(50%);
+		}
+	}
+}

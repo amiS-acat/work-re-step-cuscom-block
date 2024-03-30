@@ -1,0 +1,68 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-faq {
+	border-bottom: 0.1rem dashed #5a585a;
+	padding: 2.25rem 0;
+	margin: 0 2.25rem;
+}
+
+.wp-block-custom-faq-question {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
+	padding: 0.5rem 0;
+
+	&__icon {
+		color: var(--color-light);
+		background-color: var(--primary-color-vivid);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.25rem;
+		width: 2rem;
+		height: 2rem;
+		border: 0.1rem solid var(--primary-color-vivid);
+		border-radius: 50%;
+	}
+
+	&__text {
+		font-size: 1.125rem;
+		font-weight: bold;
+		width: 100%;
+		padding: 0.2rem 0;
+	}
+}
+
+.wp-block-custom-faq-answer {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
+	padding: 0.5rem 0;
+
+	&__icon {
+		color: var(--primary-color-vivid);
+		background-color: var(--color-light);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.25rem;
+		width: 2rem;
+		height: 2rem;
+		border: 0.1rem solid var(--primary-color-vivid);
+		border-radius: 50%;
+	}
+
+	&__text {
+		line-height: 1.75;
+		font-size: 0.75rem;
+		font-weight: bold;
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+	.wp-block-custom-faq {
+		padding: 2rem 0;
+	}
+}
