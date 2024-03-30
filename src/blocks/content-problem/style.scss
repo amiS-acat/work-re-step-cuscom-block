@@ -21,7 +21,9 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-problem {
+
 		&__inner {
 			min-height: 68rem;
 			background-size: 120rem;

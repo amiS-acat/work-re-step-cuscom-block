@@ -8,17 +8,20 @@ import './styles/edit.scss';
 const allowedBlocks = [
 	'custom/heading',
 	'custom/sticky-notes',
-	'custom/text'
-]
-const template = allowedBlocks.map((block) => [block, {}]) as TemplateArray;
+	'custom/text',
+];
+const template = allowedBlocks.map( ( block ) => [
+	block,
+	{},
+] ) as TemplateArray;
 
 export const edit = () => {
 	return (
-		<div {...useBlockProps()}>
+		<div { ...useBlockProps() }>
 			<InnerBlocks
-				allowedBlocks={allowedBlocks}
-				template={template}
-				templateLock={false}
+				allowedBlocks={ allowedBlocks }
+				template={ template }
+				templateLock={ false }
 			/>
 		</div>
 	);

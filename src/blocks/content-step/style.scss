@@ -18,7 +18,7 @@ $--breakpoint: 830px;
 	background-size: contain;
 	display: table;
 	font-size: 2.5rem;
-	font-weight: bold;
+	font-weight: 700;
 	max-width: var(--max-width-inner-container);
 	width: 100%;
 	padding: 1rem 0 2.75rem;
@@ -80,7 +80,7 @@ $--breakpoint: 830px;
 .wp-block-custom-content-step-item {
 	text-align: center;
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: 700;
 
 	&:nth-of-type(1) {
 		margin-bottom: 0.25rem;
@@ -99,7 +99,7 @@ $--breakpoint: 830px;
 		justify-content: center;
 		align-items: center;
 		font-size: 1.125rem;
-		font-weight: bold;
+		font-weight: 700;
 		height: 8rem;
 		padding-top: 0.75rem;
 		padding-left: 0.75rem;
@@ -107,6 +107,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-step {
 		padding: 3rem 2rem 3.5rem;
 	}
@@ -120,6 +121,7 @@ $--breakpoint: 830px;
 	}
 
 	.wp-block-custom-content-step-item {
+
 		&__text {
 			padding-top: 1rem;
 			padding-left: 1rem;

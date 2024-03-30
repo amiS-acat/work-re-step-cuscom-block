@@ -6,7 +6,7 @@ $--breakpoint: 830px;
 	position: relative;
 	line-height: 3.8;
 	font-size: 1.625rem;
-	font-weight: bold;
+	font-weight: 700;
 	max-width: var(--max-width-inner-container);
 	width: 100%;
 	height: fit-content;
@@ -39,6 +39,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-problem-box {
 		line-height: 2.45;
 		font-size: 1.075rem;

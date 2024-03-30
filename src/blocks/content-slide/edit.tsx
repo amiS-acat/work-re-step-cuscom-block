@@ -4,25 +4,21 @@ import { InnerBlocks, useBlockProps, RichText } from '@wordpress/block-editor';
 
 import './styles/edit.scss';
 
-const allowedBlocks = [
-	'core/image',
-]
+const allowedBlocks = [ 'core/image' ];
 
-export const edit = (props) => {
+export const edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 
 	return (
-		<div {...useBlockProps()}>
-			<h1 className='block-editor-custom-heading'>
+		<div { ...useBlockProps() }>
+			<h1 className="block-editor-custom-heading">
 				<RichText
-					value={attributes.heading}
-					onChange={(heading) => setAttributes({ heading })}
+					value={ attributes.heading }
+					onChange={ ( heading ) => setAttributes( { heading } ) }
 				/>
 			</h1>
 			<div>
-				<InnerBlocks
-					allowedBlocks={allowedBlocks}
-				/>
+				<InnerBlocks allowedBlocks={ allowedBlocks } />
 			</div>
 		</div>
 	);

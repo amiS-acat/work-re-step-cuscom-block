@@ -18,12 +18,13 @@ $--breakpoint: 830px;
 }
 
 .wp-block-custom-content-slide-heading-bubble {
+
 	&__text {
 		color: var(--color-light);
 		background-color: var(--gray-color-dark);
 		display: block;
 		font-size: 1.2rem;
-		font-weight: bold;
+		font-weight: 700;
 		padding: 0.15rem 1rem;
 	}
 
@@ -82,7 +83,9 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-slide {
+
 		&__inner {
 			margin-top: -2.2rem;
 			margin-bottom: 1.875rem;

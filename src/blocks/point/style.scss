@@ -1,5 +1,21 @@
 $--breakpoint: 830px;
 
+.wp-block-custom-point-heading {
+	background-image: url(../../images/custom-block-point-01.svg);
+	background-repeat: no-repeat;
+	background-size: 31.5rem;
+	display: table;
+	font-size: 2.75rem;
+	font-weight: 700;
+	width: 100%;
+	padding-top: 6.5rem;
+	white-space: nowrap;
+
+	>.--small {
+		font-size: 2rem;
+	}
+}
+
 .wp-block-custom-point {
 	$_this: &;
 
@@ -28,6 +44,7 @@ $--breakpoint: 830px;
 		min-height: 17.5rem;
 
 		#{$_this}__inner {
+
 			&::after {
 				background-image: url(../../images/custom-block-point-bg-02.svg);
 				right: auto;
@@ -43,6 +60,7 @@ $--breakpoint: 830px;
 
 	&:nth-child(3) {
 		#{$_this}__inner {
+
 			&::after {
 				background-image: url(../../images/custom-block-point-bg-03.svg);
 				width: 19rem;
@@ -57,7 +75,7 @@ $--breakpoint: 830px;
 	.wp-block-custom-point-text {
 		line-height: 2;
 		font-size: 1.275rem;
-		font-weight: bold;
+		font-weight: 700;
 
 		mark {
 			background-color: #fcfe95 !important;
@@ -66,23 +84,8 @@ $--breakpoint: 830px;
 	}
 }
 
-.wp-block-custom-point-heading {
-	background-image: url(../../images/custom-block-point-01.svg);
-	background-repeat: no-repeat;
-	background-size: 31.5rem;
-	display: table;
-	font-size: 2.75rem;
-	font-weight: bold;
-	width: 100%;
-	padding-top: 6.5rem;
-	white-space: nowrap;
-
-	>.--small {
-		font-size: 2rem;
-	}
-}
-
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-point {
 		$_this: &;
 
@@ -121,6 +124,7 @@ $--breakpoint: 830px;
 
 		&:nth-child(3) {
 			#{$_this}__inner {
+
 				&::after {
 					width: 17rem;
 				}

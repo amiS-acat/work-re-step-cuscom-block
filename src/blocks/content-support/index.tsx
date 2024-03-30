@@ -6,23 +6,23 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		text: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		bottomText: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		buttonText: {
 			type: 'string',
-			default: 'テキスト'
-		}
+			default: 'テキスト',
+		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

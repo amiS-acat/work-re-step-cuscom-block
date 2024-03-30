@@ -1,0 +1,3 @@
+build-assets/*
+build/*
+src/styles/tailwind.css

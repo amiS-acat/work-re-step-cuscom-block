@@ -19,7 +19,9 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-mv {
+
 		&__inner {
 			grid-template-columns: 15fr 7fr;
 			background-position: top center;

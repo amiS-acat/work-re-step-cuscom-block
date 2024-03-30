@@ -6,43 +6,43 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		heading: {
 			type: 'string',
-			default: '見だし'
+			default: '見だし',
 		},
 		tagText: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		text: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		priceText: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		beforePrice: {
 			type: 'string',
-			default: '0'
+			default: '0',
 		},
 		afterPrice: {
 			type: 'string',
-			default: '0'
+			default: '0',
 		},
 		bottomText: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		buttonText: {
 			type: 'string',
-			default: '資料請求'
+			default: '資料請求',
 		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

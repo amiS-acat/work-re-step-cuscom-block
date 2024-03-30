@@ -11,11 +11,12 @@ $--breakpoint: 830px;
 	padding: 4rem 3rem;
 
 	.wp-block-custom-heading {
+
 		&__text {
 			display: table;
 			color: var(--color-light);
 			font-size: 2rem;
-			font-weight: bold;
+			font-weight: 700;
 			text-align: center;
 			width: 100%;
 
@@ -27,14 +28,15 @@ $--breakpoint: 830px;
 }
 
 .wp-block-custom-content-contact-button {
+
 	a {
 		background-color: #fdffb6;
 		display: block;
 		font-size: 1.65rem;
-		font-weight: bold;
+		font-weight: 700;
 		width: 86%;
 		text-align: center;
-		padding: 0.5rem 0rem 0.25rem;
+		padding: 0.5rem 0 0.25rem;
 		margin: auto;
 
 		&:hover {
@@ -44,10 +46,12 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-contact {
 		padding: 3.75rem;
 
 		.wp-block-custom-heading {
+
 			&__text {
 				font-size: 2.125rem;
 			}

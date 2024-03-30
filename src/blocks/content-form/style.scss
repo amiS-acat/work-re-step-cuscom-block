@@ -22,7 +22,7 @@ $--breakpoint: 830px;
 	border: 0.1rem solid;
 	border-color: var(--gray-color-dark);
 	padding: 2rem 2.5rem 3.25rem;
-	box-shadow: 0 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
 	margin: auto;
 
 	&__inner {
@@ -34,7 +34,7 @@ $--breakpoint: 830px;
 	color: var(--color-light);
 	background-color: var(--primary-color-vivid);
 	font-size: 1.25rem;
-	font-weight: bold;
+	font-weight: 700;
 	width: fit-content;
 	padding: 0.6rem 2rem;
 	text-align: center;
@@ -65,6 +65,7 @@ $--breakpoint: 830px;
 	}
 
 	&:has(input:checked) {
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -93,9 +94,9 @@ $--breakpoint: 830px;
 	color: var(--color-light);
 	background-color: var(--primary-color-vivid);
 	font-size: 1.25rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 0.5rem 1.75rem;
-	margin-top: 0rem;
+	margin-top: 0;
 
 	&:hover {
 		opacity: 0.7;
@@ -103,10 +104,12 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-form {
 		padding: 1.25rem 2rem 7.25rem;
 
 		.wp-block-custom-form-item {
+
 			&__text {
 				padding: 0.5rem;
 			}

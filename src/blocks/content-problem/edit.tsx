@@ -6,18 +6,18 @@ import { TemplateArray } from '@wordpress/blocks';
 import '../../styles/edit.scss';
 import './styles/edit.scss';
 
-const allowedBlocks = [
-	'custom/problem-top',
-	'custom/problem-box'
-]
-const template = allowedBlocks.map((block) => [block, {}]) as TemplateArray;
+const allowedBlocks = [ 'custom/problem-top', 'custom/problem-box' ];
+const template = allowedBlocks.map( ( block ) => [
+	block,
+	{},
+] ) as TemplateArray;
 
 export const edit = () => {
 	return (
-		<div {...useBlockProps()}>
+		<div { ...useBlockProps() }>
 			<InnerBlocks
-				allowedBlocks={allowedBlocks}
-				template={template}
+				allowedBlocks={ allowedBlocks }
+				template={ template }
 			/>
 		</div>
 	);

@@ -10,9 +10,9 @@ $--breakpoint: 830px;
 	.wp-block-custom-text {
 		background-color: var(--color-light);
 		font-size: 1.5rem;
-		font-weight: bold;
+		font-weight: 700;
 		padding: 0.75rem 0.75rem;
-		box-shadow: 0 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
 
 		&::before {
 			content: "→";
@@ -22,6 +22,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-sticky-notes {
 		gap: 1.675rem;
 

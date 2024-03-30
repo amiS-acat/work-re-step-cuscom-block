@@ -27,7 +27,7 @@ $--breakpoint: 830px;
 
 	&__text {
 		font-size: 1.125rem;
-		font-weight: bold;
+		font-weight: 700;
 		width: 100%;
 		padding: 0.2rem 0;
 	}
@@ -55,13 +55,14 @@ $--breakpoint: 830px;
 	&__text {
 		line-height: 1.75;
 		font-size: 0.75rem;
-		font-weight: bold;
+		font-weight: 700;
 		width: 100%;
 		padding: 0.5rem 0;
 	}
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-faq {
 		padding: 2rem 0;
 	}

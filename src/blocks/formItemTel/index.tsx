@@ -4,27 +4,27 @@ import { edit } from '../formItemText/edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		id: {
 			type: 'string',
-			default: 'tel'
+			default: 'tel',
 		},
 		label: {
 			type: 'string',
-			default: '電話番号'
+			default: '電話番号',
 		},
 		require: {
 			type: 'boolean',
-			default: true
+			default: true,
 		},
 		placeholder: {
 			type: 'string',
-			default: ''
+			default: '',
 		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

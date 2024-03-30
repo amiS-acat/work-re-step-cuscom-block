@@ -52,6 +52,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-cards {
 		padding: 3rem 0 6.5rem;
 	}
@@ -62,6 +63,7 @@ $--breakpoint: 830px;
 	}
 
 	.wp-block-custom-cards-button {
+
 		&.--prev {
 			left: calc(50% - 25%);
 			transform: translateX(-50%);

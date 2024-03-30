@@ -6,19 +6,19 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		date: {
 			type: 'string',
-			default: '00/00(月)'
+			default: '00/00(月)',
 		},
 		time: {
 			type: 'string',
-			default: '00:00~00:00'
+			default: '00:00~00:00',
 		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

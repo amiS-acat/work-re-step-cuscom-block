@@ -6,23 +6,23 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		bubbleText1: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		bubbleText2: {
 			type: 'string',
-			default: 'テキスト'
+			default: 'テキスト',
 		},
 		buttonText: {
 			type: 'string',
-			default: '無料の資料請求'
-		}
+			default: '無料の資料請求',
+		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

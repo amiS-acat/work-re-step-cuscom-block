@@ -11,19 +11,22 @@ const allowedBlocks = [
 	'custom/campaign-frame-top',
 	'custom/texts',
 	'custom/campaign-frame-bottom',
-]
-const template = allowedBlocks.map((block) => [block, {}]) as TemplateArray;
+];
+const template = allowedBlocks.map( ( block ) => [
+	block,
+	{},
+] ) as TemplateArray;
 
 export const edit = () => {
 	const blockProps = useBlockProps();
 
 	return (
-		<div {...blockProps}>
-			<div className='block-editor-custom-box'>
+		<div { ...blockProps }>
+			<div className="block-editor-custom-box">
 				<InnerBlocks
-					allowedBlocks={allowedBlocks}
-					template={template}
-					templateLock={false}
+					allowedBlocks={ allowedBlocks }
+					template={ template }
+					templateLock={ false }
 				/>
 			</div>
 		</div>

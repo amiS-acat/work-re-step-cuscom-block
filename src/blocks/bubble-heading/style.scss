@@ -44,7 +44,7 @@ $--breakpoint: 830px;
 	&__text {
 		display: table;
 		font-size: 4rem;
-		font-weight: bold;
+		font-weight: 700;
 		text-align: center;
 
 		>.--small {
@@ -54,7 +54,9 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-bubble-heading {
+
 		&__text {
 			font-size: 4rem;
 

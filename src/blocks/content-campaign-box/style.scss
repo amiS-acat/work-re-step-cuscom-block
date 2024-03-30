@@ -10,11 +10,12 @@ $--breakpoint: 830px;
 		border-color: var(--gray-color-dark);
 		border-radius: 3rem;
 		padding-bottom: 3rem;
-		box-shadow: 0 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
 	}
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-content-campaign-box {
 		background-color: inherit;
 		padding: 0;

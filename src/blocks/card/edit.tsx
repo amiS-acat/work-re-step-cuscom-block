@@ -8,7 +8,7 @@ export const edit = () => {
 	const blockProps = useBlockProps();
 
 	return (
-		<div {...blockProps}>
+		<div { ...blockProps }>
 			<InnerBlocks />
 		</div>
 	);

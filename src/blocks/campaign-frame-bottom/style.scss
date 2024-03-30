@@ -3,7 +3,7 @@ $--breakpoint: 830px;
 .wp-block-custom-campaign-frame-bottom {
 	line-height: 2.25;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 	padding: 2.5rem 1.125rem 2rem;
 
@@ -15,7 +15,7 @@ $--breakpoint: 830px;
 		gap: 0.1rem;
 		line-height: 2;
 		font-size: 2rem;
-		font-weight: bold;
+		font-weight: 700;
 		width: fit-content;
 		padding: 0.25rem 3rem;
 		margin: 1rem auto 1.25rem;
@@ -41,6 +41,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-campaign-frame-bottom {
 		padding: 2.5rem 2rem 1.75rem;
 

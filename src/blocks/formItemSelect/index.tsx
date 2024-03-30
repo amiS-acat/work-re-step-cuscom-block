@@ -4,27 +4,27 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
 	attributes: {
 		id: {
 			type: 'string',
-			default: ''
+			default: '',
 		},
 		label: {
 			type: 'string',
-			default: ''
+			default: '',
 		},
 		require: {
 			type: 'boolean',
-			default: true
+			default: true,
 		},
 		options: {
 			type: 'string',
-			default: ''
+			default: '',
 		},
 	},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );

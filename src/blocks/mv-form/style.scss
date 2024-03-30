@@ -9,7 +9,7 @@ $--breakpoint: 830px;
 	height: fit-content;
 	border: 0.1rem solid;
 	padding: 2rem 4rem 3rem;
-	box-shadow: 0 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
 	margin-top: 1.25rem;
 }
 
@@ -17,7 +17,7 @@ $--breakpoint: 830px;
 	color: var(--color-light);
 	background-color: var(--gray-color-dark);
 	font-size: 1.25rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 0.6rem;
 	text-align: center;
 }
@@ -25,7 +25,7 @@ $--breakpoint: 830px;
 .wp-block-custom-mv-form-items {
 	display: grid;
 	gap: 1.75rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 1.125rem 0 1rem;
 }
 
@@ -47,6 +47,7 @@ $--breakpoint: 830px;
 	}
 
 	&:has(input:checked) {
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -77,7 +78,7 @@ $--breakpoint: 830px;
 .wp-block-custom-mv-form-submit {
 	background-color: #feffb6;
 	font-size: 1.125rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 0.5rem;
 	width: 64%;
 
@@ -87,6 +88,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-mv-form {
 		display: block;
 		padding: 2rem 4rem 2.75rem;

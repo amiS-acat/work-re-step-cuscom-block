@@ -5,7 +5,7 @@ $--breakpoint: 830px;
 	justify-content: center;
 	align-items: flex-end;
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 1.125rem;
 }
 
@@ -31,6 +31,7 @@ $--breakpoint: 830px;
 }
 
 @media (min-width: $--breakpoint) {
+
 	.wp-block-custom-campaign-frame-top {
 		padding: 1.5rem;
 	}

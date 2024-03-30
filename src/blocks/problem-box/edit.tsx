@@ -4,14 +4,14 @@ import { RichText, useBlockProps } from '@wordpress/block-editor';
 
 import './styles/edit.scss';
 
-export const edit = (props) => {
+export const edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 
 	return (
-		<div {...useBlockProps()}>
+		<div { ...useBlockProps() }>
 			<RichText
-				value={attributes.text}
-				onChange={(text) => setAttributes({ text })}
+				value={ attributes.text }
+				onChange={ ( text ) => setAttributes( { text } ) }
 			/>
 		</div>
 	);

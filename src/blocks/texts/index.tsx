@@ -4,11 +4,10 @@ import { edit } from './edit';
 import { save } from './save';
 import metadata from './block.json';
 
-registerBlockType(metadata.name, {
+registerBlockType( metadata.name, {
 	title: metadata.title,
-	attributes: {
-	},
+	attributes: {},
 	category: metadata.category,
 	edit,
 	save,
-});
+} );
