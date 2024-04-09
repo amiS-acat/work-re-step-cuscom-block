@@ -1,0 +1,151 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-point-heading {
+	background-image: url(../../images/custom-block-point-01.svg);
+	background-repeat: no-repeat;
+	background-size: 31.5rem;
+	display: table;
+	font-size: 2.75rem;
+	font-weight: 700;
+	width: 100%;
+	padding-top: 6.5rem;
+	white-space: nowrap;
+
+	>.--small {
+		font-size: 2rem;
+	}
+}
+
+.wp-block-custom-point {
+	$_this: &;
+
+	display: grid;
+	position: relative;
+	min-height: 20rem;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.75rem;
+
+		&::after {
+			content: "";
+			background-image: url(../../images/custom-block-point-bg-01.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 26rem;
+			height: 19rem;
+			margin: 0.5rem auto 0;
+		}
+	}
+
+	&:nth-child(2) {
+		min-height: 17.5rem;
+
+		#{$_this}__inner {
+
+			&::after {
+				background-image: url(../../images/custom-block-point-bg-02.svg);
+				right: auto;
+				left: -10rem;
+				width: 20rem;
+			}
+		}
+
+		.wp-block-custom-point-heading {
+			background-image: url(../../images/custom-block-point-02.svg);
+		}
+	}
+
+	&:nth-child(3) {
+		#{$_this}__inner {
+
+			&::after {
+				background-image: url(../../images/custom-block-point-bg-03.svg);
+				width: 19rem;
+			}
+		}
+
+		.wp-block-custom-point-heading {
+			background-image: url(../../images/custom-block-point-03.svg);
+		}
+	}
+
+	.wp-block-custom-point-text {
+		line-height: 2;
+		font-size: 1.275rem;
+		font-weight: 700;
+
+		mark {
+			background-color: #fcfe95 !important;
+			padding: 0.25rem 0 0.1rem;
+		}
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-point {
+		$_this: &;
+
+		grid-template-columns: 2fr 1fr;
+
+		&__inner {
+			gap: 0.25rem;
+
+			&::after {
+				position: absolute;
+				right: -10rem;
+				bottom: 0;
+				width: 22rem;
+				height: 16.75rem;
+			}
+		}
+
+		&:nth-child(2) {
+			direction: rtl;
+
+			#{$_this}__inner {
+				direction: ltr;
+				align-items: flex-end;
+
+				&::after {
+					right: auto;
+					left: -10rem;
+					width: 17rem;
+				}
+
+				.wp-block-custom-point-heading {
+					background-position: top right;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			#{$_this}__inner {
+
+				&::after {
+					width: 17rem;
+				}
+			}
+		}
+
+		.wp-block-custom-point-text {
+			font-size: 1rem;
+			max-width: 25rem;
+		}
+	}
+
+	.wp-block-custom-point-heading {
+		background-size: 21.75rem;
+		letter-spacing: 0.375rem;
+		font-size: 2.375rem;
+		max-width: 21.75rem;
+		padding-top: 4.125rem;
+
+		>.--small {
+			font-size: 1.75rem;
+		}
+	}
+}

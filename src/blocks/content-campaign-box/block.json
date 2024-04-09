@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "custom/content-campaign-box",
+	"version": "0.1.0",
+	"title": "Content Campaign Box",
+	"category": "widgets",
+	"icon": "smiley",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "content-campaign-box",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

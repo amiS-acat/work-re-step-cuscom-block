@@ -1,0 +1,25 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-fixed-cv-button {
+	position: fixed;
+	z-index: 40;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.9);
+
+	.wp-block-custom-cv-button {
+		margin: 2rem 1rem 2rem;
+	}
+
+	.wp-block-custom-cv-button a {
+		max-width: 90%;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-fixed-cv-button {
+		// edit
+	}
+}

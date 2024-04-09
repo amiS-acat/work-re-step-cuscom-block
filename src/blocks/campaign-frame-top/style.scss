@@ -1,0 +1,38 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-campaign-frame-top {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1.125rem;
+}
+
+.wp-block-custom-campaign-frame-top-before-price {
+	color: var(--primary-color-vivid);
+
+	&__text {
+		font-size: 2rem;
+	}
+}
+
+.wp-block-custom-campaign-frame-top-after-price {
+	color: var(--primary-color-vivid);
+
+	&__text {
+		line-height: 1;
+		font-size: 5rem;
+	}
+}
+
+.wp-block-custom-campaign-frame-top-text {
+	line-height: 2;
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-campaign-frame-top {
+		padding: 1.5rem;
+	}
+}

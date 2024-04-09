@@ -1,0 +1,79 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-campaign-frame {
+	background-color: #f6f6f6;
+	padding: 4.25rem 2rem;
+
+	&__inner {
+		color: var(--gray-color-dark);
+		background: linear-gradient(180deg, transparent 0%, transparent 50%, var(--color-light) 50%, var(--color-light) 100%);
+		max-width: 48rem;
+		width: 100%;
+		margin: auto;
+		border: 0.1rem solid;
+	}
+
+	.wp-block-custom-heading {
+		color: var(--color-light);
+		background-color: var(--primary-color-vivid);
+		position: relative;
+		font-size: 1.35rem;
+		font-weight: 700;
+		width: fit-content;
+		padding: 0.325rem 2rem 0.25rem;
+		margin: -1.25rem auto 0;
+
+		&::after {
+			content: "";
+			background-color: var(--primary-color-vivid);
+			display: block;
+			position: absolute;
+			top: calc(100% - 0.5rem);
+			left: 50%;
+			width: 1.5rem;
+			height: 1.75rem;
+			clip-path: polygon(50% 20%, 90% 80%, 10% 80%);
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+
+	.wp-block-custom-texts {
+		display: table;
+		line-height: 1.65;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 0.75rem auto;
+
+		>.--small {
+			font-size: 1rem;
+		}
+
+		>.--large {
+			font-size: 2.125rem;
+		}
+
+		>.--mark {
+			background: linear-gradient(180deg, transparent 0%, transparent 70%, #feffb6 70%, #feffb6 100%);
+		}
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-campaign-frame {
+		padding: 4.75rem 2rem 4.25rem;
+
+		&__inner {
+			background: linear-gradient(180deg, transparent 0%, transparent 54%, var(--color-light) 54%, var(--color-light) 100%);
+		}
+
+		.wp-block-custom-heading {
+			font-size: 1.5rem;
+		}
+
+		.wp-block-custom-texts {
+			font-size: 1.75rem;
+		}
+	}
+}

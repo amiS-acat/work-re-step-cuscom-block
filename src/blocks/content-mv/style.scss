@@ -1,0 +1,32 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-mv {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+
+	&__inner {
+		display: grid;
+		position: relative;
+		max-width: var(--max-width-container);
+		width: 100%;
+		min-height: 47rem;
+		background-image: url(../../images/custom-block-content-mv-bg-01.webp);
+		background-repeat: no-repeat;
+		background-position: bottom -8.25rem left 35.5%;
+		background-size: 104rem;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-mv {
+
+		&__inner {
+			grid-template-columns: 15fr 7fr;
+			background-position: top center;
+			background-size: 120rem;
+			padding: 0 1.75rem;
+		}
+	}
+}

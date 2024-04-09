@@ -1,0 +1,31 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-campaign-box {
+	background-color: var(--primary-color-light);
+	padding: 2.5rem 2rem 2rem;
+
+	&__inner {
+		background-color: var(--color-light);
+		border: 0.3rem solid;
+		border-color: var(--gray-color-dark);
+		border-radius: 3rem;
+		padding-bottom: 3rem;
+		box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-campaign-box {
+		background-color: inherit;
+		padding: 0;
+
+		&__inner {
+			background-color: inherit;
+			border: 0;
+			border-radius: 0;
+			padding-bottom: 0;
+			box-shadow: none;
+		}
+	}
+}

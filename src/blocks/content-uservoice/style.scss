@@ -1,0 +1,29 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-uservoice {
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0 2.75rem;
+
+	&__inner {
+		max-width: var(--max-width-container);
+		width: 100%;
+	}
+}
+
+.wp-block-custom-content-uservoice-heading {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-uservoice {
+		padding: 4.5rem 0 2.75rem;
+	}
+
+	.wp-block-custom-content-uservoice-heading {
+		font-size: 2.5rem;
+	}
+}

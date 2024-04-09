@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "custom/campaign-frame-bottom",
+	"parent": [ "custom/content-campaign-frame" ],
+	"version": "0.1.0",
+	"title": "Campaign Frame Bottom",
+	"category": "widgets",
+	"icon": "smiley",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "campaign-frame-bottom",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

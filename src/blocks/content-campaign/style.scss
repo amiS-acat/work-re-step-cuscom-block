@@ -1,0 +1,180 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-campaign {
+	background-color: #ec69b0;
+	display: flex;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: 700;
+	padding: 4.5rem 0 4.25rem;
+
+	&__inner {
+		display: grid;
+		gap: 3.5rem;
+		max-width: var(--max-width-container);
+		width: 100%;
+	}
+}
+
+.wp-block-custom-content-campaign-left {
+	display: grid;
+	text-align: center;
+}
+
+.wp-block-custom-content-campaign-text {
+	color: var(--color-light);
+	font-size: 2.25rem;
+}
+
+.wp-block-custom-content-campaign-bottom-text {
+	color: #feffb6;
+	font-size: 1.5rem;
+	margin-top: 2.75rem;
+}
+
+.wp-block-custom-content-campaign-price {
+	color: var(--color-light);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap: wrap;
+	line-height: 0.5;
+	font-size: 2.25rem;
+	margin-top: 1.5rem;
+
+	&__text {
+		line-height: 1.75;
+		width: 100%;
+		margin-bottom: 0.75rem;
+	}
+}
+
+.wp-block-custom-content-campaign-beforePrice {
+	letter-spacing: 0.25rem;
+	font-size: 4.25rem;
+}
+
+.wp-block-custom-content-campaign-afterPrice {
+	font-size: 6rem;
+}
+
+.wp-block-custom-content-campaign-heading {
+	color: #feffb6;
+	font-size: 2.875rem;
+}
+
+.wp-block-custom-content-campaign-tag {
+	color: var(--color-light);
+	background-color: #5a585a;
+	font-size: 2.125rem;
+	width: fit-content;
+	padding: 0.5rem 1.75rem;
+	margin: 2.5rem auto 1rem;
+}
+
+.wp-block-custom-content-campaign-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		color: #5a585a;
+		background-color: #feffb6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.75rem;
+		padding: 1.75rem 4rem;
+		border-radius: 8rem;
+
+		&::before {
+			content: "";
+			background-color: #5a585a;
+			display: block;
+			width: 2.75rem;
+			height: 2.75rem;
+			clip-path: polygon(50% 20%, 90% 80%, 10% 80%);
+			transform: rotate(90deg);
+			margin-right: 0.5rem;
+			margin-left: -0.5rem;
+		}
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-campaign-text {
+		font-size: 1.75rem;
+
+		br {
+			display: none;
+		}
+	}
+
+	.wp-block-custom-content-campaign {
+		padding: 3rem 0 4.25rem;
+
+		&__inner {
+			grid-template-columns: 2.5fr 1fr;
+			gap: 0;
+		}
+	}
+
+	.wp-block-custom-content-campaign-heading {
+		font-size: 2.25rem;
+
+		br {
+			display: none;
+		}
+	}
+
+	.wp-block-custom-content-campaign-tag {
+		font-size: 1.75rem;
+		padding: 0.5rem 1.25rem 0.25rem;
+		margin: 1rem auto 0.5rem;
+	}
+
+	.wp-block-custom-content-campaign-price {
+		letter-spacing: 0.25rem;
+		font-size: 1.75rem;
+		margin: 2rem auto;
+
+		&__text {
+			line-height: 0.5;
+			width: fit-content;
+			margin-bottom: 0;
+		}
+	}
+
+	.wp-block-custom-content-campaign-beforePrice {
+		font-size: 2.5rem;
+	}
+
+	.wp-block-custom-content-campaign-afterPrice {
+		font-size: 4rem;
+	}
+
+	.wp-block-custom-content-campaign-button {
+		justify-content: left;
+
+		a {
+			font-size: 1.75rem;
+			padding: 1rem 3rem;
+			border-radius: 2rem;
+
+			&::before {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
+
+	.wp-block-custom-content-campaign-bottom-text {
+		font-size: 1.5rem;
+		margin-top: 1.25rem;
+	}
+}

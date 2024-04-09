@@ -1,0 +1,130 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-content-step {
+	display: flex;
+	justify-content: center;
+	padding: 2.5rem 2rem 3.5rem;
+
+	&__inner {
+		max-width: var(--max-width-container);
+		width: 100%;
+	}
+}
+
+.wp-block-custom-content-step-heading {
+	background-image: url(../../images/custom-block-content-step-heading-01.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	display: table;
+	font-size: 2.5rem;
+	font-weight: 700;
+	max-width: var(--max-width-inner-container);
+	width: 100%;
+	padding: 1rem 0 2.75rem;
+	text-align: center;
+	margin: auto;
+
+	>.--small {
+		font-size: 1.75rem;
+	}
+}
+
+.wp-block-custom-content-step-body {
+	display: flex;
+	justify-content: center;
+}
+
+.wp-block-custom-content-step-items {
+	background-image: url(../../images/custom-block-content-step-items-bg-01.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: flex-end;
+	gap: 1.5rem;
+	position: relative;
+	max-width: var(--max-width-inner-container);
+	width: 100%;
+	height: 20rem;
+	margin: 3rem 0 3.5rem;
+
+	&::before {
+		content: "";
+		background-image: url(../../images/custom-block-content-step-items-bg-02.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: block;
+		position: absolute;
+		top: -1rem;
+		left: 0;
+		width: 10rem;
+		height: 10rem;
+	}
+
+	&::after {
+		content: "";
+		background-image: url(../../images/custom-block-content-step-items-bg-03.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: block;
+		position: absolute;
+		bottom: -4rem;
+		right: -3rem;
+		width: 14rem;
+		height: 11rem;
+	}
+}
+
+.wp-block-custom-content-step-item {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+
+	&:nth-of-type(1) {
+		margin-bottom: 0.25rem;
+	}
+
+	&:nth-of-type(2) {
+		margin-bottom: 4.75rem;
+	}
+
+	&:nth-of-type(3) {
+		margin-bottom: 9.25rem;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.125rem;
+		font-weight: 700;
+		height: 8rem;
+		padding-top: 0.75rem;
+		padding-left: 0.75rem;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-content-step {
+		padding: 3rem 2rem 3.5rem;
+	}
+
+	.wp-block-custom-content-step-heading {
+		font-size: 2.75rem;
+	}
+
+	.wp-block-custom-content-step-items {
+		margin: 4.5rem 0;
+	}
+
+	.wp-block-custom-content-step-item {
+
+		&__text {
+			padding-top: 1rem;
+			padding-left: 1rem;
+		}
+	}
+}

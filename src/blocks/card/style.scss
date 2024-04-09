@@ -1,0 +1,68 @@
+$--breakpoint: 830px;
+
+.wp-block-custom-card {
+	width: 100%;
+	min-width: 100%;
+	min-height: 26rem;
+	padding: 0 5%;
+
+	&__inner {
+		background-color: #eeeced;
+		width: 100%;
+		height: 100%;
+		border: 0.25rem solid var(--primary-color-vivid);
+		padding: 2.5rem 2rem;
+	}
+
+	figure {
+		width: 8rem;
+		height: 8rem;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.wp-block-custom-text {
+		font-size: 1.5rem;
+
+		&.--small {
+			font-size: 1rem;
+		}
+	}
+
+	.wp-block-group-is-layout-flex {
+		gap: 2rem;
+	}
+}
+
+@media (min-width: $--breakpoint) {
+
+	.wp-block-custom-card {
+		min-height: 18.5rem;
+
+		&__inner {
+			border: 0.2rem solid var(--primary-color-vivid);
+			padding: 1.75rem 5.5rem;
+		}
+
+		figure {
+			width: 5.5rem;
+			height: 5.5rem;
+		}
+
+		.wp-block-custom-text {
+			font-size: 1rem;
+
+			&.--small {
+				font-size: 0.75rem;
+			}
+		}
+
+		.wp-block-group-is-layout-flex {
+			gap: 1.125rem;
+		}
+	}
+}
